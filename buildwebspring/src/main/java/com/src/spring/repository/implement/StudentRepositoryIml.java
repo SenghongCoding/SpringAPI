@@ -4,8 +4,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
-
-import com.src.spring.config.WebConnection;
 import com.src.spring.model.Student;
 import com.src.spring.repository.StudentRepository;
 
@@ -17,7 +15,7 @@ public class StudentRepositoryIml implements StudentRepository {
     private ResultSet resultSet;
 
     public StudentRepositoryIml() {
-        this.conn = WebConnection.initDB();
+       
     }
 
     @Override
